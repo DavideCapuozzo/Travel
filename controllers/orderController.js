@@ -8,14 +8,14 @@ exports.getAllOrder = async (req, res, next) => {
     try {
         const orders = await Order.find()
             .populate({
-                path: 'products', // Popola i prodotti
-                select: 'name -_id', // Seleziona solo il campo "name" del prodotto, escludendo "_id"
+                path: 'products',
+                select: 'name -_id',
             })
             .populate({
-                path: 'user', // Popola l'utente
-                select: 'name surname -_id', // Seleziona solo i campi "name" e "surname" dell'utente, escludendo "_id"
+                path: 'user', 
+                select: 'name surname -_id',
             })
-            .sort({ createdAt: -1 }); // Ordina per data di creazione in ordine decrescente
+            .sort({ createdAt: -1 }); 
 
         res.status(200).json(orders);
     } catch (error) {

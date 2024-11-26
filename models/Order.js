@@ -1,30 +1,29 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-// Definizione dello schema
 const OrderSchema = new mongoose.Schema(
     {
         products: [
             {
                 type: Schema.Types.ObjectId,
                 ref: 'Product',
-                required: true, // Ogni ordine deve avere almeno un prodotto
+                required: true, 
             },
         ],
         user: [
             {
                 type: Schema.Types.ObjectId,
                 ref: 'User',
-                required: true, // Ogni ordine deve avere almeno un prodotto
+                required: true, 
             },
         ],
         createdAt: {
             type: Date,
-            default: Date.now, // Imposta automaticamente la data di creazione
+            default: Date.now,
         },
     },
     {
-        timestamps: true, // Aggiunge automaticamente campi "createdAt" e "updatedAt"
+        timestamps: true,
     }
 );
 

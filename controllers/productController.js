@@ -2,7 +2,7 @@ const Product = require('../models/Product');
 
 exports.getAllProducts = async (req, res, next) => {
     try {
-        const products = await Product.find().sort({ createdAt: -1 }); // Ordina per data di creazione (ultimo prodotto in cima)
+        const products = await Product.find().sort({ createdAt: -1 });
         res.status(200).json(products);
     } catch (error) {
         next(error);
