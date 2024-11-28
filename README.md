@@ -3,7 +3,7 @@
   <h3 align="center">Travel Api</h3>
 
   <p align="center">
-    A web application that provides APIs for eco-friendly travel management.
+    A web application that provides APIs for travel management.
     <br />
   </p>
 </div>
@@ -12,7 +12,7 @@
 
 ## About The Project
 
-The "Travel Api" is a web application that provides the API for working with eco-friendly travels!
+Orizon is a travel agency that commissioned this work, all born out of the need for people to discover sustainable types of travel that can expand their horizons
 
 ### Built With
 
@@ -23,7 +23,7 @@ The "Travel Api" is a web application that provides the API for working with eco
 
 # Getting Started with Travel Api
 
-This project uses Node.js and Express. Ensure you have them installed before proceeding.
+This project uses Node.js and Express and stored data in a MongoDb
 
 ## Prerequisites
 
