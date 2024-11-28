@@ -35,7 +35,7 @@ This project uses Node.js and Express. Ensure you have them installed before pro
 1. Clone the repository
 
    ```sh
-   git clone https://github.com/djswalterix/orizon-api.git
+   git clone https://github.com/DavideCapuozzo/Travel.git
 
    ```
 
@@ -55,7 +55,7 @@ This project uses Node.js and Express. Ensure you have them installed before pro
 
 ## API Documentation
 
-The "Orizon Api" provides the following APIs for eco-friendly travel management:
+The "Travel Api" provides the following APIs for eco-friendly travel management:
 
 ### Users API
 
