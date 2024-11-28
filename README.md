@@ -28,6 +28,7 @@ This project uses Node.js and Express. Ensure you have them installed before pro
 ## Prerequisites
 
 - Node.js and npm installed on your machine.
+- By starting this app you will automatically use my MongoDb database if you want to change it change the access data in the .env file
 
 ## Installation
 
